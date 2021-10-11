@@ -1,0 +1,25 @@
+@import 'components/customer';
+
+.card {
+    @include customer-card(false);
+    border: dashed 1px #4d4d4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    > div {
+        margin: 4px 0;
+        font-weight: 600;
+    }
+}
+
+
+.icon {
+    float: left;
+    margin-right: 12px;
+    background: #356a99;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+}

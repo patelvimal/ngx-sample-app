@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="title">Create a new Customer or select an exising one</div>
+    <div class="sub-title">Lorem insum dolar site amet,consectetur adipiscing elit, sed do einumod.</div>
+</div>
+<div class="search-input-container">
+    <input type="text" placeholder="Search for a Customer" name="customerSearch" [formControl]="customerSearchField" />
+</div>
+<div class="customer-list">
+    <ng-container>
+        <app-add-customer></app-add-customer>
+    </ng-container>
+    <ng-container *ngIf="customers$ | async as customers">
+        <ng-container *ngFor="let customer of customers">
+            <app-customer-info [customer]="customer"></app-customer-info>
+        </ng-container>
+    </ng-container>
+</div>

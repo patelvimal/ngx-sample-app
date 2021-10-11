@@ -1,0 +1,62 @@
+{
+    "npmScope": "ngx-sample-workspace",
+    "affected": {
+        "defaultBase": "master"
+    },
+    "implicitDependencies": {
+        "package.json": {
+            "dependencies": "*",
+            "devDependencies": "*"
+        },
+        ".eslintrc.json": "*"
+    },
+    "tasksRunnerOptions": {
+        "default": {
+            "runner": "@nrwl/workspace/tasks-runners/default",
+            "options": {
+                "cacheableOperations": ["build", "lint", "test", "e2e"]
+            }
+        }
+    },
+    "targetDependencies": {
+        "build": [
+            {
+                "target": "build",
+                "projects": "dependencies"
+            }
+        ]
+    },
+    "projects": {
+        "customer-data-access": {
+            "tags": []
+        },
+        "customer-feature-list": {
+            "tags": []
+        },
+        "customer-feature-new": {
+            "tags": []
+        },
+        "customer-ui-add-customer": {
+            "tags": []
+        },
+        "customer-ui-customer-info": {
+            "tags": []
+        },
+        "dashboard-feature": {
+            "tags": []
+        },
+        "ngx-sample-app": {
+            "tags": []
+        },
+        "ngx-sample-app-e2e": {
+            "tags": [],
+            "implicitDependencies": ["ngx-sample-app"]
+        },
+        "shared-data-access-models": {
+            "tags": []
+        },
+        "shared-ui-styles": {
+            "tags": []
+        }
+    }
+}

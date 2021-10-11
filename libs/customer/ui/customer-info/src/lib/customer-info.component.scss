@@ -1,0 +1,29 @@
+@import 'components/customer';
+
+.card {
+    @include customer-card(true);
+
+    > div {
+        margin: 4px 0;
+    }
+}
+
+
+.icon {
+    float: left;
+    margin-right: 12px;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.owner {
+    font-size: 14px;
+    color: #959799;
+}
+
+.address,.email {
+    font-size: 14px;
+    color: #656768;
+}

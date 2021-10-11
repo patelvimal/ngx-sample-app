@@ -1,0 +1,16 @@
+@mixin card($width: '0px',$height: '0px', $box-shadow:true) {
+    background: #fff;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 12px;
+  
+    @if $width != '0px' {
+        width: $width;
+    }
+    @if $height != '0px' {
+        height:$height;
+    }
+    @if $box-shadow == true {
+        box-shadow: 0px 2px 4px 0px #cdcbcb;   
+    }
+}

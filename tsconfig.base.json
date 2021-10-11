@@ -1,0 +1,48 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2017", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@ngx-sample-app/customer/data-access": [
+                "libs/customer/data-access/src/index.ts"
+            ],
+            "@ngx-sample-app/customer/feature/list": [
+                "libs/customer/feature/list/src/index.ts"
+            ],
+            "@ngx-sample-app/customer/feature/new": [
+                "libs/customer/feature/new/src/index.ts"
+            ],
+            "@ngx-sample-app/customer/ui/customer-info": [
+                "libs/customer/ui/customer-info/src/index.ts"
+            ],
+            "@ngx-sample-app/customer/ui/customer-list": [
+                "libs/customer/ui/customer-list/src/index.ts"
+            ],
+            "@ngx-sample-app/dashboard/feature": [
+                "libs/dashboard/feature/src/index.ts"
+            ],
+            "@ngx-sample-workspace/customer/ui/add-customer": [
+                "libs/customer/ui/add-customer/src/index.ts"
+            ],
+            "@ngx-sample-workspace/shared/data-access/models": [
+                "libs/shared/data-access/models/src/index.ts"
+            ],
+            "@ngx-sample-workspace/shared/ui-styles": [
+                "libs/shared/ui-styles/src/index.ts"
+            ]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
+}
